@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+    <title>Supera-Rh-Tela</title>
+  </head>
+  <body>
+    <div class="painel">
+      <div class="busca">
+        <div class="input-labels">
+          <div>
+            <label for="inicio">Data Inicio</label>
+            <input type="datetime" id="inicio" />
+          </div>
+          <div>
+            <label for="fim">Data Fim</label>
+            <input type="datetime" id="fim" />
+          </div>
+          <div>
+            <label for="operador">Nome do Operador</label>
+            <input type="text" id="operador" />
+          </div>
+        </div>
+        <div class="button">
+          <button type="button" id="button">Pesquisar</button>
+        </div>
+      </div>
+
+      <div class="table" id="tab">
+        <table border="1">
+          <thead>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+            <th>Nome Operador</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
